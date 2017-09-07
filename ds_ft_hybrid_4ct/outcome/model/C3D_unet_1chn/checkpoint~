@@ -1,0 +1,2 @@
+model_checkpoint_path: "C3DCONV1CHAN"
+all_model_checkpoint_paths: "C3DCONV1CHAN"
