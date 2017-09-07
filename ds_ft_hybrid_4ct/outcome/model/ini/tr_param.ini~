@@ -1,0 +1,38 @@
+[param_setting]
+; train / test / crsv
+phase = train
+; batch size in training, 1
+batch_size = 1
+; patch size in training, 64
+inputI_size = 96
+; input channel number, 1
+inputI_chn = 1
+; output image size, 64
+outputI_size = 96
+; output channel, 8
+output_chn = 8
+; label rename map
+rename_map = 0, 205, 420, 500, 550, 600, 820, 850
+; volume resize ratio
+resize_r = 0.6
+; training data directory
+traindata_dir = /home/xinyang/project_xy/mmwhs2017/dataset/ct_train_hist
+; checkpoint directory
+chkpoint_dir = ../outcome/model/checkpoint
+; learning rate of Adam, 1e-3
+learning_rate = 0.001
+; momentum term of Adam, 0.5
+beta1 = 0.5
+; training epoch, 10000
+epoch = 34000
+; model name
+model_name = ds_ft_hybrid_4ct.model
+; model save interval
+save_intval = 2000
+; testing data  directory
+testdata_dir = /home/xinyang/project_xy/mmwhs2017/dataset/ct_test_hist
+; labeling output directory
+labeling_dir = /home/xinyang/project_xy/mmwhs2017/dataset/common/hybrid_ct_map
+;labeling_dir = /home/xinyang/project_xy/mmwhs2017/dataset/test_submit/xy_20170619/ds_ft_hybrid_4ct
+; cube overlap factor
+ovlp_ita = 4
