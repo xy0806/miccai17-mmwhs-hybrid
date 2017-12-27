@@ -292,7 +292,7 @@ class unet_3D_xy(object):
             vol_data = vol_file.get_data().copy()
 
             # ====================
-            if k == 22 or 36:
+            if k == 22 or k == 36:
                 # flip
                 vol_data = vol_data[::-1, :, :]
             # ====================
@@ -337,7 +337,7 @@ class unet_3D_xy(object):
             composed_label_resz = remove_minor_cc(composed_label_resz, rej_ratio=0.3, rename_map=self.rename_map)
 
             # ====================
-            if k == 22 or 36:
+            if k == 22 or k == 36:
                 # flip
                 composed_label_resz = composed_label_resz[::-1, :, :]
             # ====================
