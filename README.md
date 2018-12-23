@@ -16,7 +16,7 @@ https://drive.google.com/open?id=1Nly8ghHvedVC3EZetFJRRtLq7Ll-U0Fx
 A CT data from the training dataset for demo:
 https://drive.google.com/open?id=1b2sFaKrBfTRx6i0lBD5L6IZXP01W9L5C
 
-
+  
 If our work is helpful to you, please kindly cite our paper as:  
 @inproceedings{yang2017hybrid,  
   title={Hybrid Loss Guided Convolutional Networks for Whole Heart Parsing},  
