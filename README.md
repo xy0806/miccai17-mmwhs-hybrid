@@ -8,8 +8,10 @@ you can find the required model below:
 C3D Model:  
 https://drive.google.com/open?id=1N4LVb03Ehot34Bxcm1KkO14csuThOXUv  
 If you don't need this model, you can just comment the initialization of this model in code.  
+  
 Trained model for CT segmentation:  
 https://drive.google.com/open?id=1Nly8ghHvedVC3EZetFJRRtLq7Ll-U0Fx  
+  
 A CT data from the training dataset for demo:  
 https://drive.google.com/open?id=1b2sFaKrBfTRx6i0lBD5L6IZXP01W9L5C  
 
