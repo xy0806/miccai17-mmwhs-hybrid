@@ -284,7 +284,7 @@ class unet_3D_xy(object):
         test_list.sort()
 
         # test
-        for k in range(36, len(test_list)):
+        for k in range(0, len(test_list)):
             # load the volume
             vol_file = nib.load(test_list[k])
             ref_affine = vol_file.affine
