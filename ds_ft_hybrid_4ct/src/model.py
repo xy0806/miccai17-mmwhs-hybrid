@@ -291,12 +291,6 @@ class unet_3D_xy(object):
             # get volume data
             vol_data = vol_file.get_data().copy()
 
-            # ====================
-            if k == 22 or k == 36:
-                # flip
-                vol_data = vol_data[::-1, :, :]
-            # ====================
-
             resize_dim = (np.array(vol_data.shape) * self.resize_r).astype('int')
             vol_data_resz = resize(vol_data, resize_dim, order=1, preserve_range=True)
             # normalization
@@ -335,12 +329,6 @@ class unet_3D_xy(object):
 
             # remove minor connected components
             composed_label_resz = remove_minor_cc(composed_label_resz, rej_ratio=0.3, rename_map=self.rename_map)
-
-            # ====================
-            if k == 22 or k == 36:
-                # flip
-                composed_label_resz = composed_label_resz[::-1, :, :]
-            # ====================
 
             labeling_path = os.path.join(self.labeling_dir, ('ct_test_' + str(2001+k) + '_label.nii.gz'))
             labeling_vol = nib.Nifti1Image(composed_label_resz, ref_affine)
